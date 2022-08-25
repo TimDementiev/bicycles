@@ -1,0 +1,269 @@
+@import url(../vendor/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+@import url(../blocks/page/page.css);
+
+/*BUTTON*/
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/__arrow/button__arrow.css);
+@import url(../blocks/button/_place/button_place_history.css);
+@import url(../blocks/button/_place/button_place_donations-butons.css);
+@import url(../blocks/button/_type/button_type_more.css);
+@import url(../blocks/button/_type/button_type_amount.css);
+@import url(../blocks/button/_type/button_type_other-sum.css);
+@import url(../blocks/button/_type/button_type_submit.css);
+@import url(../blocks/button/_type/button_type_support.css);
+@import url(../blocks/button/_type/button_type_left-arrow.css);
+@import url(../blocks/button/_type/button_type_right-arrow.css);
+@import url(../blocks/button/_type/button_type_watch.css);
+@import url(../blocks/button/_type/button_type_slider-left.css);
+@import url(../blocks/button/_type/button_type_slider-right.css);
+@import url(../blocks/button/_type/button_type_agency.css);
+@import url(../blocks/button/_type/button_type_history.css);
+@import url(../blocks/button/_type/button_type_news.css);
+@import url(../blocks/button/_color/button_color_black-white.css);
+@import url(../blocks/button/_color/button_color_blue.css);
+@import url(../blocks/button/_color/button_color_green.css);
+@import url(../blocks/button/_color/button_color_orange.css);
+@import url(../blocks/button/_color/button_color_white-blue.css);
+@import url(../blocks/button/_order/button_order_third.css);
+@import url(../blocks/button/_order/button_order_fourth.css);
+@import url(../blocks/button/_width/button_width_180px.css);
+
+/*CARD*/
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__text/card__text.css);
+@import url(../blocks/card/__description/card__description.css);
+@import url(../blocks/card/_type/card_type_area-of-work.css);
+@import url(../blocks/card/_type/card_type_for-whom.css);
+@import url(../blocks/card/_color/card_color_blue.css);
+@import url(../blocks/card/_color/card_color_green.css);
+@import url(../blocks/card/_color/card_color_orange.css);
+@import url(../blocks/card/_color/card_color_white.css);
+@import url(../blocks/card/_order/card_order_lagging.css);
+@import url(../blocks/card/_order/card_order_third.css);
+@import url(../blocks/card/_order/card_order_outrunning.css);
+
+/*HEADING*/
+@import url(../blocks/heading/heading.css);
+@import url(../blocks/heading/_type/heading_type_page.css);
+@import url(../blocks/heading/_type/heading_type_card.css);
+@import url(../blocks/heading/_type/heading_type_section.css);
+@import url(../blocks/heading/_type/heading_type_section-margin.css);
+@import url(../blocks/heading/_type/heading_type_card.css);
+@import url(../blocks/heading/_type/heading_type_footer.css);
+@import url(../blocks/heading/__span-accent/heading__span-accent.css);
+@import url(../blocks/heading/_justify/heading_justify_center.css);
+@import url(../blocks/heading/_padding/heading_padding_agency.css);
+@import url(../blocks/heading/_margin/heading_margin_small.css);
+@import url(../blocks/heading/_margin/heading_margin_middle.css);
+@import url(../blocks/heading/_width/heading_width_505px.css);
+
+/*AREAS-OF-WORK*/
+@import url(../blocks/areas-of-work/areas-of-work.css);
+@import url(../blocks/areas-of-work/areas-of-work__list/areas-of-work__list.css);
+
+/*SOCIAL-PROJECT*/
+@import url(../blocks/social-project/social-project.css);
+@import url(../blocks/social-project/__text/social-project__text.css);
+@import url(../blocks/social-project/__slider-num/social-project__slider-num.css);
+@import url(../blocks/social-project/__arrow-buttons/social-project__arrow-buttons.css);
+@import url(../blocks/social-project/__img/social-project__img.css);
+@import url(../blocks/social-project/__img/_overlap/social-project__img_overlap_upper.css);
+@import url(../blocks/social-project/__img/_overlap/social-project__img_overlap_lower.css);
+@import url(../blocks/social-project/__slide/social-project__slide.css);
+@import url(../blocks/social-project/__container/social-project__container.css);
+
+/*HEADER*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__menu-button/header__menu-button.css);
+@import url(../blocks/header/__menu-button-image/header__menu-button-image.css);
+@import url(../blocks/header/__menu-button-title/header__menu-button-title.css);
+@import url(../blocks/header/__buttons-container/header__buttons-container.css);
+@import url(../blocks/header/__link-platform/header__link-platform.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-wrapper/header__menu-wrapper.css);
+@import url(../blocks/header/__menu-about-project/header__menu-about-project.css);
+@import url(../blocks/header/__menu-to-disabled/header__menu-to-disabled.css);
+@import url(../blocks/header/__menu-services/header__menu-services.css);
+@import url(../blocks/header/__menu-etc/header__menu-etc.css);
+@import url(../blocks/header/__menu-item-link/header__menu-item-link.css);
+@import url(../blocks/header/__submenu-list/header__submenu-list.css);
+@import url(../blocks/header/__submenu-item-link/header__submenu-item-link.css);
+@import url(../blocks/header/__menu-button-wrapper/header__menu-button-wrapper.css);
+@import url(../blocks/header/__submenu-button/header__submenu-button.css);
+@import url(../blocks/header/__submenu-button_active/header__submenu-button_active.css);
+
+/*NAVIGATION*/
+@import url(../blocks/navigation/navigation.css);
+@import url(../blocks/navigation/__list/navigation__list.css);
+@import url(../blocks/navigation/__list-link/navigation__list-link.css);
+
+/*DONATION-BUTTONS*/
+@import url(../blocks/donation-buttons/donation-buttons.css);
+@import url(../blocks/donation-buttons/__container/donation-buttons__container.css);
+@import url(../blocks/donation-buttons/__list/donation-buttons__list.css);
+@import url(../blocks/donation-buttons/__hide-radio/donation-buttons__hide-radio.css);
+@import url(../blocks/donation-buttons/__pseudo-radio/donation-buttons__pseudo-radio.css);
+
+/*FOR-WHOM*/
+@import url(../blocks/for-whom/for-whom.css);
+@import url(../blocks/for-whom/__container/for-whom__container.css);
+@import url(../blocks/for-whom/__card-list/for-whom__card-list.css);
+@import url(../blocks/for-whom/__icon/for-whom__icon.css);
+@import url(../blocks/for-whom/__icon/_type/for-whom__icon_type_csr.css);
+@import url(../blocks/for-whom/__icon/_type/for-whom__icon_type_disabled.css);
+@import url(../blocks/for-whom/__icon/_type/for-whom__icon_type_employer.css);
+
+/* SUPPORT */
+@import url(../blocks/support/support.css);
+@import url(../blocks/support/__title/support__title.css);
+@import url(../blocks/support/__main-container/support__main-container.css);
+@import url(../blocks/support/__container/support__container.css);
+
+/* DONAT */
+@import url(../blocks/donat/donat.css);
+@import url(../blocks/donat/__item/donat__item.css);
+@import url(../blocks/donat/__list/donat__list.css);
+@import url(../blocks/donat/__title/donat__title.css);
+@import url(../blocks/donat/__amount/donat__amount.css);
+@import url(../blocks/donat/__container/donat__container.css);
+@import url(../blocks/donat/__item-user/donat__item-user.css);
+@import url(../blocks/donat/__time/donat__time.css);
+
+/* FORM */
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__fieldset-container/form__fieldset-container.css);
+@import url(../blocks/form/__fieldset-container/_el/form__fieldset-container_el_amount.css);
+@import url(../blocks/form/__fieldset-container/_el/form__fieldset-container_el_payment.css);
+@import url(../blocks/form/__fieldset-container/_el/form__fieldset-container_el_period.css);
+@import url(../blocks/form/__fieldset-container/_el/form__fieldset-container_el_profile.css);
+@import url(../blocks/form/__subtitle/form__subtitle.css);
+@import url(../blocks/form/__radio/_type/form__radio_type_amount.css);
+@import url(../blocks/form/__radio/_type/form__radio_type_payment.css);
+@import url(../blocks/form/__radio/_type/form__radio_type_period.css);
+@import url(../blocks/form/__radio-btns-container/form__radio-btns-container.css);
+@import url(../blocks/form/__amount-description/form__amount-description.css);
+@import url(../blocks/form/__radio/_el/form__radio_el_cards.css);
+@import url(../blocks/form/__radio/_el/form__radio_el_webmoney.css);
+@import url(../blocks/form/__radio/_el/form__radio_el_ymoney.css);
+@import url(../blocks/form/__checkboxs-container/form__checkboxs-container.css);
+@import url(../blocks/form/__user-input/form__user-input.css);
+@import url(../blocks/form/__user-input/_type/form__user-input_type_mail.css);
+@import url(../blocks/form/__user-input/_type/form__user-input_type_name.css);
+@import url(../blocks/form/__checkbox-text/form__checkbox-text.css);
+@import url(../blocks/form/__checkbox/form__checkbox.css);
+@import url(../blocks/form/__checkbox/_visible/form__checkbox_visible.css);
+@import url(../blocks/form/__radio/form__radio.css);
+@import url(../blocks/form/__question/form__question.css);
+@import url(../blocks/form/__btn-rewind/form__btn-rewind.css);
+@import url(../blocks/form/__hide-radio/form__hide-radio.css);
+@import url(../blocks/form/__pseudo-radio/form__pseudo-radio.css);
+@import url(../blocks/form/__pseudo-radio/_height/form__pseudo-radio_height_48px.css);
+@import url(../blocks/form/__checkbox-link/form__checkbox-link.css);
+@import url(../blocks/form/__popup/form__popup.css);
+@import url(../blocks/form/__popup-container/form__popup-container.css);
+@import url(../blocks/form/__popup/_opened/form__popup_opened.css);
+
+/* NEWS */
+@import url(../blocks/news/news.css);
+@import url(../blocks/news/__container/news__container.css);
+@import url(../blocks/news-cell/news-cell.css);
+@import url(../blocks/news-cell/__heading/news-cell__heading.css);
+@import url(../blocks/news-cell/__image/news-cell__image.css);
+@import url(../blocks/news-cell/__title/news-cell__title.css);
+@import url(../blocks/news-cell/__text/news-cell__text.css);
+@import url(../blocks/news-cell/__time/news-cell__time.css);
+
+/* AGENCY */
+@import url(../blocks/agency/agency.css);
+@import url(../blocks/agency/__container/agency__container.css);
+@import url(../blocks/agency/__cells-container/agency__cells-container.css);
+@import url(../blocks/agency-cell/agency-cell.css);
+@import url(../blocks/agency-cell/__image/agency-cell__image.css);
+@import url(../blocks/agency-cell/__text/agency-cell__text.css);
+@import url(../blocks/agency/__subtitle/agency__subtitle.css);
+
+/* MAIN-WORK */
+@import url(../blocks/main-work/main-work.css);
+
+/* ACCORDION */
+@import url(../blocks/accordions/accordions.css);
+@import url(../blocks/accordions/__column/accordions__column.css);
+@import url(../blocks/accordion/accordion.css);
+@import url(../blocks/accordion/__title/accordion__title.css);
+@import url(../blocks/accordion/__text/accordion__text.css);
+
+/* NUMBERS */
+@import url(../blocks/numbers/numbers.css);
+@import url(../blocks/numbers/__content/numbers__content.css);
+@import url(../blocks/numbers/__image/numbers__image.css);
+@import url(../blocks/numbers/__table/numbers__table.css);
+@import url(../blocks/numbers/__row/numbers__row.css);
+@import url(../blocks/numbers/__table-cell/numbers__table-cell.css);
+@import url(../blocks/numbers/__span-accent/numbers__span-accent.css);
+@import url(../blocks/numbers/__table-text/numbers__table-text.css);
+
+/* SPECIAL-PROJECTS */
+@import url(../blocks/special-projects/special-projects.css);
+@import url(../blocks/project-card/project-card.css);
+@import url(../blocks/project-card/__container/project-card__container.css);
+@import url(../blocks/project-card/__slide/project-card__slide.css);
+@import url(../blocks/project-card/__content/project-card__content.css);
+@import url(../blocks/project-card/__text/project-card__text.css);
+@import url(../blocks/project-card/__caption/project-card__caption.css);
+@import url(../blocks/project-card/__paragraph/project-card__paragraph.css);
+@import url(../blocks/project-card/__image/project-card__image.css);
+@import url(../blocks/fade/fade.css);
+
+/* SLIDER */
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/slider/__track/slider__track.css);
+
+/* HISTORY */
+@import url(../blocks/history/history.css);
+@import url(../blocks/history-plate/history-plate.css);
+@import url(../blocks/history-plate/__image/history-plate__image.css);
+@import url(../blocks/history-plate/__container/history-plate__container.css);
+@import url(../blocks/history-plate/__container/_story/history-plate__container_story_short.css);
+@import url(../blocks/history-plate/__quotes/history-plate__quotes.css);
+@import url(../blocks/history-plate/__title/history-plate__title.css);
+@import url(../blocks/history-plate/__text/history-plate__text.css);
+@import url(../blocks/history-plate/__short-story/history-plate__short-story.css);
+@import url(../blocks/history-plate/__heading/history-plate__heading.css);
+@import url(../blocks/history-plate/__button/history-plate__button.css);
+@import url(../blocks/history-plate/_type/history-plate_type_short-story.css);
+
+/* FOOTER */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/footer/__copyright-text/footer__copyright-text.css);
+@import url(../blocks/footer/__sponsors/footer__sponsors.css);
+@import url(../blocks/footer/__sponsor/footer__sponsor.css);
+@import url(../blocks/footer/__sponsor/_type/footer__sponsors-beeline.css);
+@import url(../blocks/footer/__sponsor/_type/footer__sponsors-fond.css);
+@import url(../blocks/footer/__sm-container/footer__sm-container.css);
+@import url(../blocks/footer/__sm-icons/footer__sm-icons.css);
+@import url(../blocks/footer/__sm-icon/footer__sm-icon.css);
+@import url(../blocks/footer/__sm-icon/_type/footer__sm-icon_type_telegram.css);
+@import url(../blocks/footer/__sm-icon/_type/footer__sm-icon_type_vk.css);
+@import url(../blocks/footer/__contacts/footer__contacts.css);
+@import url(../blocks/footer/__telephone/footer__telephone.css);
+@import url(../blocks/footer/__telephone-num/footer__telephone-num.css);
+@import url(../blocks/footer/__address/footer__address.css);
+@import url(../blocks/footer/__praktikum/footer__praktikum.css);
+@import url(../blocks/footer/__praktikum-logo/footer__praktikum-logo.css);
+@import url(../blocks/footer/__praktikum-text/footer__praktikum-text.css);
+@import url(../blocks/footer-brand/footer-brand.css);
+@import url(../blocks/footer-brand/__container/footer-brand__container.css);
+@import url(../blocks/footer-brand/__logo/footer-brand__logo.css);
+@import url(../blocks/footer-brand/__text/footer-brand__text.css);
+@import url(../blocks/footer-links/footer-links.css);
+@import url(../blocks/footer-links/__list/footer-links__list.css);
+@import url(../blocks/footer-links/__list-link/footer-links__list-link.css);
+@import url(../blocks/footer-links/__list-item/footer-links__list-item.css);
+
+
+
+
