@@ -1,0 +1,27 @@
+.caption {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #151515;
+  max-width: max-content;
+
+  &_place_intro {
+    grid-area: 5/1/5/1;
+    display: grid;
+    grid-template-columns: max-content 132px;
+    gap: 30px;
+  }
+
+  &::after {
+    content: "";
+    // margin: 0 0 0 30px;
+    width: 132px;
+    height: 2px;
+    background: #d7d4d4;
+    align-self: center;
+
+    // border: 1px red solid;
+  }
+}

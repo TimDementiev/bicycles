@@ -1,0 +1,30 @@
+.section-intro {
+  position: relative;
+  margin: 0 auto;
+  padding: 80px 0 0 120px;
+  max-width: 1440px;
+  min-height: 856px;
+  display: grid;
+  grid-template-rows: 120px 118px 50px 75px 18px 1fr;
+  gap: 47px;
+  background: url(/images/Placeholder.png) no-repeat;
+  background-position: right 0 top 20px;
+  background-size: 610px, 836px, cover;
+  box-sizing: border-box;
+
+  &__bike {
+    margin: 0;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    top: 392px;
+    right: 370px;
+    width: 440px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    border-radius: 20px;
+    background: #F4F4F4;
+  }
+}
