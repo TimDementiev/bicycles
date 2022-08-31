@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  color: #151515;
+  color: $textMainColor;
   max-width: max-content;
 
   &_place_intro {
@@ -16,12 +16,9 @@
 
   &::after {
     content: "";
-    // margin: 0 0 0 30px;
     width: 132px;
     height: 2px;
     background: #d7d4d4;
     align-self: center;
-
-    // border: 1px red solid;
   }
 }

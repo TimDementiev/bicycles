@@ -1,4 +1,19 @@
 .header {
-  width: 100%;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1440px;
   min-height: 74px;
+  background-color: $bg-color;
+
+  &__container {
+    padding: 0 0 0 922px;
+    min-height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 34px;
+    align-content: center;
+  }
 }
