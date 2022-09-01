@@ -1,0 +1,74 @@
+.lightmode {
+  padding: 0;
+  margin: 2px 44px 0 0;
+  grid-area: 3/2/3/2;
+  justify-self: flex-end;
+  height: 24px;
+  width: 44px;
+  // background-size: 44px 24px;
+  background: $checkboxBgColor;
+  border-radius: 9999px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -50px;
+    width: 28px;
+    height: 28px;
+    background-image: url(./../../images/lightmode_sun.svg);
+    background-size: 28px, 28px, cover;
+    background-repeat: no-repeat;
+    background-position: top 0px right 0px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: -41px;
+    width: 19px;
+    height: 19px;
+    background-image: url(../../images/lightmode_moon.svg);
+    background-size: 19px, 19px, cover;
+    background-repeat: no-repeat;
+    background-position: top 0px right 0px;
+  }
+
+  &__switcher {
+    visibility: hidden;
+    &:checked ~ .lightmode__check {
+      transform: translateX(20px);
+    }
+  }
+
+  &__check {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    background: #24b47e;
+    left: 2px;
+    z-index: 3;
+    transition: all 200ms ease-in-out;
+  }
+
+  // &__box {
+  // height: 20px;
+  // width: 20px;
+  // display: inline-block;
+  // position: absolute;
+  // border-radius: 50%;
+  // top: 2px;
+  // background: #24b47e;
+  // left: 2px;
+  // z-index: 3;
+  // transition: all 200ms ease-in-out;
+  // }
+}

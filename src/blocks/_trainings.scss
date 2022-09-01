@@ -1,0 +1,15 @@
+.trainings {
+  padding: 150px 120px 120px;
+  display: grid;
+  grid-template-columns: 460px 580px;
+  gap: 160px;
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, max-content) 1fr;
+    gap: 30px;
+  }
+}

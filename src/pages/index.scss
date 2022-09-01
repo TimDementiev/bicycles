@@ -2,16 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "../modules/variables";
 
+@import "../blocks/section";
 @import "../blocks/heading";
 @import "../blocks/text";
 @import "../blocks/caption";
 @import "../blocks/button";
 @import "../blocks/link";
+@import "../blocks/container";
+@import "../blocks/card";
+@import "../blocks/form";
 
-
-@import "../blocks/_page";
+@import "../blocks/page";
 @import "../blocks/header";
-@import "../blocks/section-intro";
+@import "../blocks/intro";
+@import "../blocks/quote";
+@import "../blocks/purpose";
+@import "../blocks/bicycles";
+@import "../blocks/trainings";
 @import "../blocks/footer";
+@import "../blocks/lightmode";
 
 

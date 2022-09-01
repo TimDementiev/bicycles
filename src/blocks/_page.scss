@@ -1,12 +1,17 @@
 .page {
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: $font-family;
   min-width: 320px;
-  min-height: 2000px;
   margin: 0 auto;
-  background: #F4F4F4;
+  background: $backgroundMainColor;
   position: relative;
 }
 
 // * {
 //   border: 1px solid red;
 // }
+
+// TODO SVG for purpose block
+// TODO Animation for intro block
+// TODO Slider 1
+// TODO Slider 2
+// TODO Shadow for bicycles cards

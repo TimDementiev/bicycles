@@ -1,9 +1,45 @@
 .card {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  box-sizing: border-box;
 
-  &__title {
-    width: 200px;
+  &_type_intro {
+    padding: 20px 50px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 392px;
+    right: 370px;
+    width: 440px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    border-radius: 20px;
+    background: $backgroundMainColor;
+  }
+
+  &_type_purpose {
+    grid-template-rows: 60px 148px 400px;
+    gap: 47px;
+  }
+
+  &_type_bicycles {
+    box-sizing: border-box;
+    // padding: 20px;
+    // margin: 20px;
+    grid-template-rows: 380px 22px;
+    gap: 22px;
+    border-radius: 20px;
+    // filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+    // box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+
+    & img {
+      // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      // filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+      // margin: 20px;
+    }
   }
 }

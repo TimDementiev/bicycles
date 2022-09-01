@@ -11,29 +11,178 @@
 
 <body class="page">
   <!-- HEADER -->
-  <header class="header">
-    <div class="header__container">
-      <a href="#" class="link">Покрытия и градиенты</a>
-      <a href="#" class="link">Велосипеды</a>
-      <a href="#" class="link">Тренировки</a>
-    </div>
+  <header class="section header">
+    <ul class="container container_type_header">
+      <li><a href="#purpose" class="link link_place_header">Покрытия и градиенты</a></li>
+      <li><a href="#bicycles" class="link link_place_header">Велосипеды</a></li>
+      <li><a href="#trainings" class="link link_place_header">Тренировки</a></li>
+    </ul>
   </header>
   <!-- MAIN -->
   <main>
-    <section class="section-intro">
-      <!-- <div class="section-intro__container"></div> -->
+    <!-- INTRO -->
+    <section class="section intro">
       <H1 class="heading heading_place_intro">Шоссе, ТТ и&nbsp;Грэвел</H1>
-      <p class="text text_place_intro">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам
+      <p class="text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам
         – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-      <a href="#" class="button button_type_more">Подробнее</a>
-      <p class="caption caption_place_intro">Cannondale Systemsix</p>
+      <a href="#" class="link link_place_intro">Подробнее</a>
+      <p class="caption caption_type_intro">Cannondale Systemsix</p>
       <img src="images/bike_cannondale_systemsix.png" alt="Изображение велосипеда Cannondale Systemsix"
-        class="section-intro__bike">
+        class="card card_type_intro">
     </section>
-
+    <!-- QUOTE -->
+    <section class="section quote">
+      <img src="images/quote_lubo_minar.png" alt="Изображение велосипедиста на дороге на фоне гор">
+      <div class="container container_type_quote">
+        <h3 class="heading heading_place_quote">«Катайся много или мало, долго или коротко, как хочешь - но катайся»
+        </h3>
+        <p class="caption caption_type_author">Эдди Меркс</p>
+        <p class="caption caption_type_job">Велогонщик</p>
+      </div>
+    </section>
+    <!-- PURPOSE -->
+    <section class="section purpose" id="purpose">
+      <ul class="container container_type_purpose">
+        <li class="card card_type_purpose">
+          <h2 class="heading heading_place_purpose heading_order_first">Шоссе</h2>
+          <p class="text text_order_first">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь
+            то
+            горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+          <img src="images/purpose_david_dvoracek.png"
+            alt="Изображение ровной асфальтовой дороги на фоне гор и хвойного леса"
+            class="social-project__img social-project__img_overlap_upper">
+        </li>
+        <li class="card card_type_purpose">
+          <h2 class="heading heading_place_purpose heading_order_second">Грэвел</h2>
+          <p class="text text_order_second">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается,
+            и на нём стоят
+            более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+          <img src="images/purpose_sheldon_thompson.png"
+            alt="Изображение ровной асфальтовой дороги на фоне гор и хвойного леса"
+            class="social-project__img social-project__img_overlap_upper">
+        </li>
+        <li class="card card_type_purpose">
+          <h2 class="heading heading_place_purpose heading_order_third">ТТ</h2>
+          <p class="text text_order_third">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком
+            велике только по
+            равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
+          <img src="images/purpose_gary_butterfield.png"
+            alt="Изображение ровной асфальтовой дороги на фоне гор и хвойного леса"
+            class="social-project__img social-project__img_overlap_upper">
+        </li>
+      </ul>
+      <div class="button__container button__container_type_purpose">
+        <button class="button button_type_arrow button_direction_left">
+          <svg width="10" height="18" class="button__arrow" viewBox="0 0 10 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L2 9L9 17" stroke="#151515" stroke-width="2" />
+          </svg>
+        </button>
+        <button class="button button_type_arrow button_direction_right"><svg width="10" height="18"
+            class="button__arrow" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 17L8 9L1 0.999999" stroke="#151515" stroke-width="2" />
+          </svg></button>
+      </div>
+    </section>
+    <!-- BICYCLES -->
+    <section class="section bicycles" id="bicycles">
+      <h2 class="heading heading_place_bicycles">Велосипеды</h2>
+      <ul class="button__container button__container_type_bicycles">
+        <li class="">
+          <input class="button__hide-radio" id="radio-bicycles-1" type="radio" name="bicycles" value="1" checked />
+          <label for="radio-bicycles-1" class="button button_type_radio">Шоссе</label>
+        </li>
+        <li class="">
+          <input class="button__hide-radio" id="radio-bicycles-2" type="radio" name="bicycles" value="2" />
+          <label for="radio-bicycles-2" class="button button_type_radio">Грэвел</label>
+        </li>
+        <li class="">
+          <input class="button__hide-radio" id="radio-bicycles-3" type="radio" name="bicycles" value="3" />
+          <label for="radio-bicycles-3" class="button button_type_radio">TT</label>
+        </li>
+      </ul>
+      <ul class="container container_type_bicycles">
+        <li class="">
+          <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN"
+            class="link card card_type_bicycles" target="_blank">
+            <img src="images/bike_cervelo_caledonia_5.png" alt="Изображение велосипеда Cervelo Caledonia-5">
+            <p class="caption caption_type_bicycles">Cervelo Caledonia-5</p>
+          </a>
+        </li>
+        <li class="card card_type_bicycles">
+          <img src="images/bike_cannondale_systemsix_himod.png" alt="Изображение велосипеда Cannondale Systemsix Himod">
+          <p class="caption caption_type_bicycles">Cannondale Systemsix Himod</p>
+        </li>
+        <li class="card card_type_bicycles">
+          <img src="images/bike_trek_domane_SL_7.png" alt="Изображение велосипеда Trek Domane SL-7">
+          <p class="caption caption_type_bicycles">Trek Domane SL-7</p>
+        </li>
+        <li class="card card_type_bicycles">
+          <img src="images/bike_cervelo_aspero_grx_810.png" alt="Изображение велосипеда Cervelo Aspero GRX 810">
+          <p class="caption caption_type_bicycles">Cervelo Aspero GRX 810</p>
+        </li>
+        <li class="card card_type_bicycles">
+          <img src="images/bike_specialized_s_works_diverge.png"
+            alt="Изображение велосипеда Specialized S-Works Diverge">
+          <p class="caption caption_type_bicycles">Specialized S-Works Diverge</p>
+        </li>
+        <li class="card card_type_bicycles">
+          <img src="images/bike_cannondale_topstone_lefty_3.png"
+            alt="Изображение велосипеда Cannondale Topstone Lefty 3">
+          <p class="caption caption_type_bicycles">Cannondale Topstone Lefty 3</p>
+        </li>
+        <li class="card card_type_bicycles">
+          <img src="images/bike_specialized_s_works_shiv.png" alt="Изображение велосипеда Specialized S-Works Shiv">
+          <p class="caption caption_type_bicycles">Specialized S-Works Shiv</p>
+        </li>
+        <li class="card card_type_bicycles">
+          <img src="images/bike_bmc_timemachine_01_one.png" alt="Изображение велосипеда BMC Timemachine 01 ONE">
+          <p class="caption caption_type_bicycles">BMC Timemachine 01 ONE</p>
+        </li>
+        <li class="card card_type_bicycles">
+          <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
+            class="link" target="_blank">
+            <img src="images/bike_cervelo_p_series.png" alt="Изображение велосипеда Cervelo P-Series">
+            <p class="caption caption_type_bicycles">Cervelo P-Series</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- TRAININGS -->
+    <section class="section trainings" id="trainings">
+      <div class="container container_type_trainings">
+        <h2 class="heading heading_place_trainings">Тренировки</h2>
+        <p class="text ">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
+          а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный
+          план.</p>
+        <ul class="trainings__links">
+          <li><a href="https://www.strava.com" class="link link_place_trainings" target="_blank">Strava</a></li>
+          <li><a href="https://www.komoot.com" class="link link_place_trainings" target="_blank">Komoot</a></li>
+        </ul>
+      </div>
+      <img src="images/trainings_nicolas_solerieu.png"
+        alt="Изображение асфальтовой дороги поворачивающей за угол с деревьями на обочинах">
+    </section>
   </main>
   <!-- FOOTER -->
-  <footer class="footer"></footer>
+  <footer class="section footer">
+    <div class="container container_type_footer">
+      <h3 class="heading heading_place_footer">Подпишитесь на рассылку —</h3>
+      <div class="form">
+        <label class="form__text-input-label">
+          <input type="email" class="form__text-input" placeholder="Ваш e-mail" name="email"
+            pattern="(\w\.?)+@[\w\.-]+\.\w{2,}" required>
+        </label>
+        <button class="button form__submit" type="submit">ok</button>
+      </div>
+      <p class="text text_place_footer">© Road Club 2021</p>
+      <label class="lightmode">
+        <input class="lightmode__switcher" type="checkbox" id="lightmode-checkbox">
+        <span class="lightmode__check"></span>
+        <span class="lightmode__box"></span>
+      </label>
+    </div>
+  </footer>
 </body>
 
 </html>

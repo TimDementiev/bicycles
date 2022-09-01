@@ -1,0 +1,21 @@
+.form {
+  margin: 0;
+  padding: 0;
+  grid-area: 2/1/2/1;
+  height: 50px;
+
+  &__text-input {
+    margin: 0;
+    padding: 0 0 0 19px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 360px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    color: $transparentTextMainColor;
+    background: $backgroundFooterColor;
+    border: 1px solid rgba(199, 199, 199, 0.5);
+    border-radius: 4px;
+  }
+}

@@ -1,14 +1,50 @@
 .heading {
   margin: 0;
   padding: 0;
+  color: $textMainColor;
   font-weight: 700;
   font-size: 55px;
   line-height: 60px;
   letter-spacing: -0.5px;
-  color: $textMainColor;
+  max-width: 460px;
 
   &_place_intro {
-    max-width: 460px;
     padding: 3px 0 0;
+  }
+
+  &_place_quote {
+    max-width: 470px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  &_place_trainings {
+    padding: 3px 0 0;
+  }
+
+  &_place_purpose {
+    padding: 3px 0 0;
+  }
+
+  &_place_bicycles {
+    padding: 3px 0 0;
+  }
+
+  &_place_footer {
+    max-width: 229px;
+    padding: 1px 0 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: unset;
+  }
+
+  &_order_second {
+    visibility: hidden;
+  }
+
+  &_order_third {
+    visibility: hidden;
   }
 }
