@@ -2,16 +2,16 @@
   font-family: $font-family;
   min-width: 320px;
   margin: 0 auto;
-  background: $backgroundMainColor;
+  background: var(--backgroundMainColor, $backgroundMainColor);
   position: relative;
 }
 
-// * {
-//   border: 1px solid red;
-// }
+* {
+  // border: 1px solid red;
+  box-sizing: border-box;
+}
 
 // TODO SVG for purpose block
-// TODO Animation for intro block
 // TODO Slider 1
-// TODO Slider 2
+// TODO Slider 2 adaptive
 // TODO Shadow for bicycles cards

@@ -9,7 +9,7 @@
     box-sizing: border-box;
     position: absolute;
     z-index: 1;
-    top: 392px;
+    top: 347px;
     right: 370px;
     width: 440px;
     height: 300px;
@@ -19,9 +19,16 @@
     background: $backgroundMainColor;
   }
 
+  &_type_fixed {
+    position: absolute;
+  }
+
   &_type_purpose {
+    position: absolute;
     grid-template-rows: 60px 148px 400px;
     gap: 47px;
+    // transform: translateX(-110%);
+    transition: transform 1s ease-out;
   }
 
   &_type_bicycles {
@@ -41,5 +48,17 @@
       // filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
       // margin: 20px;
     }
+  }
+
+  &_visible_first {
+    // transform: translateX(0);
+  }
+
+  &_visible_second {
+    // transform: translateX(110%);
+  }
+
+  &_visible_second ~ .card_type_purpose {
+    // transform: translateX(220%);
   }
 }

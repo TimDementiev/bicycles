@@ -1,6 +1,9 @@
 .bicycles {
   padding: 60px 120px;
-  // display: flex;
   display: grid;
   grid-template-columns: 460px 740px;
+  &__slider {
+    overflow: hidden;
+    grid-area: 2/1/2/3;
+  }
 }

@@ -24,6 +24,15 @@
       justify-self: flex-end;
       gap: 40px;
       margin: 29px 0 0;
+      & #radio-bicycles-1:checked ~ ul {
+        left: 0;
+      }
+      & #radio-bicycles-2:checked ~ ul {
+        left: -100%;
+      }
+      &#radio-bicycles-3:checked ~ .container_type_bicycles {
+        left: -200%;
+      }
     }
   }
 
@@ -32,7 +41,6 @@
 
     &:checked + .button_type_radio {
       color: $textMainColor;
-      color: red;
       &:hover {
         opacity: 0.75;
       }
@@ -40,8 +48,6 @@
 
     &:disabled + .button_type_radio {
       color: $textAuxColor;
-      opacity: 0.7;
-      // color: green;
     }
   }
 

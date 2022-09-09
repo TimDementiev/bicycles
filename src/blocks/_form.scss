@@ -1,8 +1,21 @@
 .form {
+  position: relative;
   margin: 0;
   padding: 0;
   grid-area: 2/1/2/1;
   height: 50px;
+
+  &__text-input-label {
+    color: red;
+    &:hover {
+      color: red;
+    }
+    &:focus {
+      color: $textMainColor;
+      background: $backgroundFooterColor;
+      border: 1px solid $formBorderColor;
+    }
+  }
 
   &__text-input {
     margin: 0;
@@ -14,8 +27,36 @@
     font-size: 13px;
     line-height: 28px;
     color: $transparentTextMainColor;
+    color: red;
     background: $backgroundFooterColor;
-    border: 1px solid rgba(199, 199, 199, 0.5);
+    border: 1px solid $formBorderColor;
     border-radius: 4px;
+    &:active {
+      background: red;
+    }
+    &:focus {
+      color: $textMainColor;
+      background: $backgroundFooterColor;
+      border: 1px solid $formBorderColor;
+    }
+    &:hover {
+      color: purple;
+    }
+  }
+
+  &__submit {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    right: 22px;
+    top: 14px;
+
+    &:focus {
+      display: block;
+    }
+
+    &:hover {
+      display: block;
+    }
   }
 }

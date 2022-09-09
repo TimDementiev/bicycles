@@ -42,12 +42,6 @@
   line-height: 32px;
   letter-spacing: unset;
 }
-.heading_order_second {
-  visibility: hidden;
-}
-.heading_order_third {
-  visibility: hidden;
-}
 
 .text {
   margin: 0;
@@ -55,7 +49,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #222222;
+  color: rgba(34, 34, 34, 0.7);
   opacity: 0.7;
   max-width: 460px;
 }
@@ -66,12 +60,6 @@
   line-height: 20px;
   color: rgb(207, 207, 207);
   grid-area: 3/1/3/1;
-}
-.text_order_second {
-  visibility: hidden;
-}
-.text_order_third {
-  visibility: hidden;
 }
 
 .caption {
@@ -96,7 +84,7 @@
   content: "";
   width: 132px;
   height: 2px;
-  background: #d7d4d4;
+  background: rgb(215, 212, 212);
   align-self: center;
 }
 .caption_type_author {
@@ -106,7 +94,7 @@
   line-height: 32px;
 }
 .caption_type_job {
-  color: #222222;
+  color: rgba(34, 34, 34, 0.7);
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
@@ -143,25 +131,32 @@
   gap: 40px;
   margin: 29px 0 0;
 }
+.button__container_type_bicycles #radio-bicycles-1:checked ~ ul {
+  left: 0;
+}
+.button__container_type_bicycles #radio-bicycles-2:checked ~ ul {
+  left: -100%;
+}
+.button__container_type_bicycles#radio-bicycles-3:checked ~ .container_type_bicycles {
+  left: -200%;
+}
 .button__hide-radio {
   display: none;
 }
 .button__hide-radio:checked + .button_type_radio {
   color: rgb(21, 21, 21);
-  color: red;
 }
 .button__hide-radio:checked + .button_type_radio:hover {
   opacity: 0.75;
 }
 .button__hide-radio:disabled + .button_type_radio {
-  color: #222222;
-  opacity: 0.7;
+  color: rgba(34, 34, 34, 0.7);
 }
 .button_type_radio {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #222222;
+  color: rgba(34, 34, 34, 0.7);
 }
 .button_type_arrow {
   width: 50px;
@@ -189,6 +184,9 @@
   padding: 0;
   text-decoration: none;
   color: rgb(21, 21, 21);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .link:hover {
   opacity: 0.75;
@@ -199,11 +197,10 @@
   line-height: 18px;
 }
 .link_place_intro {
-  width: 180px;
+  grid-area: 3/1/3/1;
+  position: relative;
+  max-width: 180px;
   height: 50px;
-  left: 120px;
-  top: 486px;
-  background: #24b47e;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
@@ -211,14 +208,30 @@
   line-height: 18px;
   text-align: center;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
+  background: rgb(36, 180, 126);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: ease-in-out;
+  z-index: 1;
 }
 .link_place_intro:hover {
   opacity: 1;
+}
+.link_place_intro:hover:before {
+  right: 0;
+}
+.link_place_intro:before {
+  content: "";
+  position: absolute;
+  background: rgb(49, 158, 117);
+  bottom: 0;
+  top: 0;
+  right: 100%;
+  left: 0;
+  z-index: -1;
+  transition: 1s ease-in-out;
+  border-radius: 4px;
 }
 .link_place_trainings {
   font-weight: 600;
@@ -246,18 +259,17 @@
   gap: 6px;
 }
 .container_type_purpose {
-  margin: 0 0 50px;
-  grid-template-columns: repeat(3, 650px);
-  gap: 40px;
   overflow: hidden;
+  width: 100%;
+  min-height: 702px;
+  margin: 0 0 50px;
 }
 .container_type_bicycles {
   width: 100%;
   padding: 117px 0 0;
-  overflow: hidden;
-  grid-area: 2/1/2/3;
   grid-template-columns: repeat(9, 1fr);
   gap: 30px;
+  transition: transform 1s ease-in-out;
 }
 .container_type_trainings {
   grid-template-rows: 60px 1fr 31px;
@@ -284,7 +296,7 @@
   box-sizing: border-box;
   position: absolute;
   z-index: 1;
-  top: 392px;
+  top: 347px;
   right: 370px;
   width: 440px;
   height: 300px;
@@ -292,11 +304,16 @@
      object-fit: cover;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
-  background: #f4f4f4;
+  background: rgb(244, 244, 244);
+}
+.card_type_fixed {
+  position: absolute;
 }
 .card_type_purpose {
+  position: absolute;
   grid-template-rows: 60px 148px 400px;
   gap: 47px;
+  transition: transform 1s ease-out;
 }
 .card_type_bicycles {
   box-sizing: border-box;
@@ -308,12 +325,23 @@
   border-radius: 20px;
   padding: 20px;
 }
-
 .form {
+  position: relative;
   margin: 0;
   padding: 0;
   grid-area: 2/1/2/1;
   height: 50px;
+}
+.form__text-input-label {
+  color: red;
+}
+.form__text-input-label:hover {
+  color: red;
+}
+.form__text-input-label:focus {
+  color: rgb(21, 21, 21);
+  background: rgb(239, 239, 239);
+  border: 1px solid rgba(199, 199, 199, 0.5);
 }
 .form__text-input {
   margin: 0;
@@ -325,17 +353,46 @@
   font-size: 13px;
   line-height: 28px;
   color: rgba(21, 21, 21, 0.75);
+  color: red;
   background: rgb(239, 239, 239);
   border: 1px solid rgba(199, 199, 199, 0.5);
   border-radius: 4px;
+}
+.form__text-input:active {
+  background: red;
+}
+.form__text-input:focus {
+  color: rgb(21, 21, 21);
+  background: rgb(239, 239, 239);
+  border: 1px solid rgba(199, 199, 199, 0.5);
+}
+.form__text-input:hover {
+  color: purple;
+}
+.form__submit {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  right: 22px;
+  top: 14px;
+}
+.form__submit:focus {
+  display: block;
+}
+.form__submit:hover {
+  display: block;
 }
 
 .page {
   font-family: "Inter", "Arial", sans-serif;
   min-width: 320px;
   margin: 0 auto;
-  background: #f4f4f4;
+  background: var(--backgroundMainColor, rgb(244, 244, 244));
   position: relative;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .header {
@@ -345,7 +402,8 @@
   top: 0;
   left: 0;
   min-height: 74px;
-  background: #f4f4f4;
+  background: rgb(244, 244, 244);
+  box-shadow: -2px 0 rgb(244, 244, 244), 2px 0 rgb(244, 244, 244), 0 7px 5px -10px black;
 }
 
 .intro {
@@ -369,13 +427,20 @@
 }
 
 .purpose {
-  padding: 60px 120px 60px;
+  padding: 60px 0 60px;
+  position: relative;
+  max-width: 1200px;
+  min-height: 922px;
 }
 
 .bicycles {
   padding: 60px 120px;
   display: grid;
   grid-template-columns: 460px 740px;
+}
+.bicycles__slider {
+  overflow: hidden;
+  grid-area: 2/1/2/3;
 }
 
 .trainings {
@@ -406,8 +471,7 @@
   justify-self: flex-end;
   height: 24px;
   width: 44px;
-  background-size: 44px 24px;
-  background: #ffffff;
+  background: rgb(255, 255, 255);
   border-radius: 9999px;
   position: relative;
   cursor: pointer;
@@ -451,8 +515,8 @@
   position: absolute;
   border-radius: 50%;
   top: 2px;
-  background: #24b47e;
+  background: rgb(36, 180, 126);
   left: 2px;
   z-index: 3;
-  transition: all 200ms ease-in-out;
+  transition: all 0.05s ease-in-out;
 }/*# sourceMappingURL=index.css.map */
