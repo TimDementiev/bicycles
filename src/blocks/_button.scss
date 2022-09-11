@@ -63,6 +63,9 @@
     justify-content: center;
     background-color: $buttonBgColor;
     color: $textMainColor;
+    background: url(/images/button_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
 
     &:hover {
       background-color: $transparentButtonBgColor;
@@ -75,7 +78,7 @@
   }
 
   &_direction_right {
-    transform: translateX(2px);
+    transform: translateX(2px) rotate(180deg);
   }
 
   &_type_gear {
@@ -85,6 +88,30 @@
 
 @media screen and (max-width: 1439px) {
   .button {
+    &__container {
+      &_type_purpose {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        gap: 20px;
+      }
+    }
+
+    &_type_arrow {
+      width: 24px;
+      height: 24px;
+      border-radius: 30px;
+      background-size: 5px 10px;
+    }
+
+    &_direction_left {
+      transform: translateX(0px);
+    }
+
+    &_direction_right {
+      transform: translateX(0px) rotate(180deg);
+    }
+
     &_type_gear {
       display: flex;
       grid-area: 3/2/3/2;

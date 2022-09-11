@@ -63,6 +63,9 @@
     font-size: 23px;
     line-height: 29px;
   }
+  .heading_place_purpose {
+    padding: 41px 0 0;
+  }
   .heading_place_footer {
     max-width: unset;
     padding: 2px 0 0;
@@ -225,6 +228,9 @@
   justify-content: center;
   background-color: rgb(235, 235, 235);
   color: rgb(21, 21, 21);
+  background: url(/images/button_arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .button_type_arrow:hover {
   background-color: rgba(235, 235, 235, 0.6);
@@ -234,13 +240,31 @@
   transform: translateX(-2px);
 }
 .button_direction_right {
-  transform: translateX(2px);
+  transform: translateX(2px) rotate(180deg);
 }
 .button_type_gear {
   display: none;
 }
 
 @media screen and (max-width: 1439px) {
+  .button__container_type_purpose {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    gap: 20px;
+  }
+  .button_type_arrow {
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    background-size: 5px 10px;
+  }
+  .button_direction_left {
+    transform: translateX(-1px);
+  }
+  .button_direction_right {
+    transform: translateX(1px) rotate(180deg);
+  }
   .button_type_gear {
     display: flex;
     grid-area: 3/2/3/2;
@@ -379,8 +403,10 @@
     gap: 4px;
   }
   .container_type_purpose {
+    overflow: hidden;
     width: 100%;
     min-height: 505px;
+    margin: 0;
   }
   .container_type_footer {
     margin: 0 auto;
@@ -397,7 +423,7 @@
   display: grid;
   box-sizing: border-box;
 }
-.card__img-conainer {
+.card__img-container {
   position: relative;
 }
 .card__icon {
@@ -482,6 +508,21 @@
 }
 
 @media screen and (max-width: 1439px) {
+  .card__img-container {
+    position: relative;
+    grid-area: 2/1/2/1;
+  }
+  .card__icon_type_label {
+    width: 70px;
+    z-index: 1;
+    bottom: 13px;
+    left: 0;
+  }
+  .card__icon_type_line {
+    z-index: 2;
+    bottom: 24px;
+    left: 16px;
+  }
   .card_type_intro {
     padding: 11px 27px;
     box-sizing: border-box;
@@ -493,9 +534,10 @@
     height: 160px;
   }
   .card_type_purpose {
+    border-top: 1px solid rgb(227, 227, 227);
     position: absolute;
-    grid-template-rows: 60px 148px 400px;
-    gap: 47px;
+    grid-template-rows: 80px 175px 90px;
+    gap: 40px;
     transform: translateX(-106.15%);
     transition: transform 1s ease-in-out;
   }
@@ -507,6 +549,24 @@
   }
   .card_type_purpose > .card__img-container > .card__icon {
     visibility: hidden;
+  }
+  .card_visible_first {
+    transform: translateX(0);
+  }
+  .card_visible_first > .heading {
+    visibility: visible;
+  }
+  .card_visible_first > .text {
+    visibility: visible;
+  }
+  .card_visible_first > .card__img-container > .card__icon {
+    visibility: visible;
+  }
+  .card_visible_second {
+    transform: translateX(106.15%);
+  }
+  .card_visible_second ~ .card_type_purpose {
+    transform: translateX(212.3%);
   }
 }
 .form {
@@ -647,9 +707,9 @@
   }
 }
 .purpose {
-  margin: 0 auto;
   padding: 60px 120px;
   min-height: 922px;
+  position: relative;
 }
 .purpose__slidebar {
   position: relative;
@@ -658,9 +718,8 @@
 
 @media screen and (max-width: 1439px) {
   .purpose {
-    padding: 0;
+    padding: 40px 18px;
     min-height: 505px;
-    border-top: 1px solid rgb(227, 227, 227);
   }
 }
 .bicycles {

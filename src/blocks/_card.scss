@@ -4,7 +4,7 @@
   display: grid;
   box-sizing: border-box;
 
-  &__img-conainer {
+  &__img-container {
     position: relative;
   }
 
@@ -101,8 +101,29 @@
     transform: translateX(212.3%);
   }
 }
+
 @media screen and (max-width: 1439px) {
   .card {
+    &__img-container {
+      position: relative;
+      grid-area: 2/1/2/1;
+    }
+
+    &__icon {
+      &_type_label {
+        width: 70px;
+        z-index: 1;
+        bottom: 13px;
+        left: 0;
+      }
+
+      &_type_line {
+        z-index: 2;
+        bottom: 24px;
+        left: 16px;
+      }
+    }
+
     &_type_intro {
       padding: 11px 27px;
       box-sizing: border-box;
@@ -115,9 +136,10 @@
     }
 
     &_type_purpose {
+      border-top: 1px solid $sectionBorderColor;
       position: absolute;
-      grid-template-rows: 60px 148px 400px;
-      gap: 47px;
+      grid-template-rows: 80px 175px 90px;
+      gap: 40px;
       transform: translateX(-106.15%);
       transition: transform 1s ease-in-out;
       & > .heading {
@@ -129,6 +151,27 @@
       & > .card__img-container > .card__icon {
         visibility: hidden;
       }
+    }
+
+    &_visible_first {
+      transform: translateX(0);
+      & > .heading {
+        visibility: visible;
+      }
+      & > .text {
+        visibility: visible;
+      }
+      & > .card__img-container > .card__icon {
+        visibility: visible;
+      }
+    }
+
+    &_visible_second {
+      transform: translateX(106.15%);
+    }
+
+    &_visible_second ~ .card_type_purpose {
+      transform: translateX(212.3%);
     }
   }
 }
