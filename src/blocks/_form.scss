@@ -1,0 +1,61 @@
+.form {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  grid-area: 2/1/2/1;
+  height: 50px;
+
+  &:focus-visible {
+    color: $textMainColor;
+    background: $backgroundFooterColor;
+    border: none;
+  }
+
+  &__email-label {
+    color: $textMainColor;
+    &:focus {
+      color: $textMainColor;
+      background: $backgroundFooterColor;
+    }
+  }
+
+  &__email-input {
+    margin: 0;
+    padding: 0 0 0 19px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 360px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    color: $textMainColor;
+    background: $backgroundFooterColor;
+    border: 1px solid $formBorderColor;
+    border-radius: 4px;
+  }
+
+  &__submit {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    right: 22px;
+    top: 14px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .form {
+    &__email-input {
+      margin: 0;
+      padding: 0 0 0 19px;
+      box-sizing: border-box;
+      height: 50px;
+      width: 284px;
+      font-weight: 500;
+    }
+  }
+}

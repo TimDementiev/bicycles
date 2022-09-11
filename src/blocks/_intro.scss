@@ -1,0 +1,23 @@
+.intro {
+  position: relative;
+  padding: 80px 0 0 120px;
+  min-height: 856px;
+  display: grid;
+  grid-template-rows: 120px 118px 50px 75px 18px 1fr;
+  gap: 47px;
+  background: url(/images/intro_coniferous_forest.png) no-repeat;
+  background-position: right 0 top 20px;
+  background-size: 610px, 836px, cover;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1439px) {
+  .intro {
+    padding: 40px 18px;
+    min-height: 746px;
+    grid-template-rows: 467px 73px 46px;
+    gap: 40px;
+    background-position: right 18px top 160px;
+    background-size: 254px, 348px, cover;
+  }
+}

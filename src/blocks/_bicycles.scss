@@ -1,0 +1,14 @@
+.bicycles {
+  padding: 60px 120px;
+  display: grid;
+  grid-template-columns: 460px 740px;
+  &__slidebar {
+    overflow: hidden;
+    grid-area: 2/1/2/3;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .bicycles {
+    padding: 40px 18px;
+  }
+}
