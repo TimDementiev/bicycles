@@ -249,9 +249,9 @@
 @media screen and (max-width: 1439px) {
   .button__container_type_purpose {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    gap: 20px;
+    top: 87px;
+    right: 18px;
+    gap: 10px;
   }
   .button_type_arrow {
     width: 24px;
@@ -260,10 +260,10 @@
     background-size: 5px 10px;
   }
   .button_direction_left {
-    transform: translateX(-1px);
+    transform: translateX(0px);
   }
   .button_direction_right {
-    transform: translateX(1px) rotate(180deg);
+    transform: translateX(0px) rotate(180deg);
   }
   .button_type_gear {
     display: flex;
@@ -403,7 +403,6 @@
     gap: 4px;
   }
   .container_type_purpose {
-    overflow: hidden;
     width: 100%;
     min-height: 505px;
     margin: 0;
@@ -707,7 +706,7 @@
   }
 }
 .purpose {
-  padding: 60px 120px;
+  padding: 60px 0 60px 120px;
   min-height: 922px;
   position: relative;
 }
@@ -732,6 +731,11 @@
   grid-area: 2/1/2/3;
 }
 
+@media screen and (max-width: 1439px) {
+  .bicycles {
+    padding: 40px 18px;
+  }
+}
 .trainings {
   padding: 150px 120px 123px;
   display: grid;
