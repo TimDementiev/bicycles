@@ -4,10 +4,6 @@
   padding: 0;
   cursor: pointer;
 
-  // &__arrow {
-  //   position: center;
-  // }
-
   &__container {
     margin: 0;
     padding: 0;
@@ -24,13 +20,13 @@
       justify-self: flex-end;
       gap: 40px;
       margin: 29px 0 0;
-      & #radio-bicycles-1:checked ~ ul {
+      & #radio-bicycles-1:checked ~ .container_type_bicycles {
         left: 0;
       }
-      & #radio-bicycles-2:checked ~ ul {
+      & #radio-bicycles-2:checked ~ .container_type_bicycles {
         left: -100%;
       }
-      &#radio-bicycles-3:checked ~ .container_type_bicycles {
+      & #radio-bicycles-3:checked ~ .container_type_bicycles {
         left: -200%;
       }
     }
@@ -73,10 +69,29 @@
       color: $transparentTextMainColor;
     }
   }
+
   &_direction_left {
     transform: translateX(-2px);
   }
+
   &_direction_right {
     transform: translateX(2px);
+  }
+
+  &_type_gear {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .button {
+    &_type_gear {
+      display: flex;
+      grid-area: 3/2/3/2;
+      // align-self: center;
+      // align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

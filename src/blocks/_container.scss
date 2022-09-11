@@ -4,7 +4,6 @@
   display: grid;
   list-style: none;
   box-sizing: border-box;
-  // overflow: hidden;
 
   &_type_header {
     padding: 0 0 1px 922px;
@@ -20,15 +19,10 @@
   }
 
   &_type_purpose {
-    overflow: hidden;
+    // overflow: hidden;
     width: 100%;
     min-height: 702px;
-    // grid-template-columns: repeat(3, 650px);
-    // position: relative;
     margin: 0 0 50px;
-    // display: flex;
-    // gap: 40px;
-    // transition: 10s ease-in-out;
   }
 
   &_type_bicycles {
@@ -51,5 +45,35 @@
     grid-template-columns: max-content 1fr;
     grid-template-rows: 64px 86px 28px;
     gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    &_type_quote {
+      grid-template-rows: 121px 22px 16px;
+      gap: 4px;
+    }
+    &_type_purpose {
+      // overflow: hidden;
+      width: 100%;
+      min-height: 505px;
+      // margin: 0 0 50px;
+    }
+    &_type_bicycles {
+      // width: 100%;
+      // padding: 117px 0 0;
+      // grid-template-columns: repeat(9, 1fr);
+      // gap: 30px;
+      // transition: transform 1s ease-in-out;
+    }
+    &_type_footer {
+      margin: 0 auto;
+      max-width: 320px;
+      padding: 60px 18px 16px;
+      grid-template-columns: 250px 34px;
+      grid-template-rows: 65px 100px 38px;
+      gap: 40px 0;
+    }
   }
 }

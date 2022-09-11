@@ -56,6 +56,14 @@
     background: $greenButtonColor;
     left: 2px;
     z-index: 3;
-    transition: all .05s ease-in-out;
+    transition: all 0.05s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .lightmode {
+    &_place_footer {
+      display: none;
+    }
   }
 }

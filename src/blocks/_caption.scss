@@ -43,3 +43,20 @@
     line-height: 22px;
   }
 }
+@media screen and (max-width: 1439px) {
+  .caption {
+    &_type_intro {
+      display: none;
+    }
+
+    &_type_author {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &_type_job {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+}

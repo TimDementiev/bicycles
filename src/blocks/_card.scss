@@ -4,6 +4,27 @@
   display: grid;
   box-sizing: border-box;
 
+  &__img-conainer {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    transition: visibility 1s ease-in-out;
+    &_type_label {
+      max-width: max-content;
+      max-width: 200px;
+      z-index: 1;
+      bottom: 13px;
+      left: 0;
+    }
+    &_type_line {
+      z-index: 2;
+      bottom: 24px;
+      left: 16px;
+    }
+  }
+
   &_type_intro {
     padding: 20px 50px;
     box-sizing: border-box;
@@ -27,8 +48,17 @@
     position: absolute;
     grid-template-rows: 60px 148px 400px;
     gap: 47px;
-    // transform: translateX(-110%);
-    transition: transform 1s ease-out;
+    transform: translateX(-106.15%);
+    transition: transform 1s ease-in-out;
+    & > .heading {
+      visibility: hidden;
+    }
+    & > .text {
+      visibility: hidden;
+    }
+    & > .card__img-container > .card__icon {
+      visibility: hidden;
+    }
   }
 
   &_type_bicycles {
@@ -51,14 +81,54 @@
   }
 
   &_visible_first {
-    // transform: translateX(0);
+    transform: translateX(0);
+    & > .heading {
+      visibility: visible;
+    }
+    & > .text {
+      visibility: visible;
+    }
+    & > .card__img-container > .card__icon {
+      visibility: visible;
+    }
   }
 
   &_visible_second {
-    // transform: translateX(110%);
+    transform: translateX(106.15%);
   }
 
   &_visible_second ~ .card_type_purpose {
-    // transform: translateX(220%);
+    transform: translateX(212.3%);
+  }
+}
+@media screen and (max-width: 1439px) {
+  .card {
+    &_type_intro {
+      padding: 11px 27px;
+      box-sizing: border-box;
+      position: absolute;
+      z-index: 1;
+      top: 300px;
+      right: 50px;
+      width: 234px;
+      height: 160px;
+    }
+
+    &_type_purpose {
+      position: absolute;
+      grid-template-rows: 60px 148px 400px;
+      gap: 47px;
+      transform: translateX(-106.15%);
+      transition: transform 1s ease-in-out;
+      & > .heading {
+        visibility: hidden;
+      }
+      & > .text {
+        visibility: hidden;
+      }
+      & > .card__img-container > .card__icon {
+        visibility: hidden;
+      }
+    }
   }
 }

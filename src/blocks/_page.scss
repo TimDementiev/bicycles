@@ -1,6 +1,6 @@
 .page {
   font-family: $font-family;
-  min-width: 320px;
+  min-width: 768px;
   margin: 0 auto;
   background: var(--backgroundMainColor, $backgroundMainColor);
   position: relative;
@@ -11,7 +11,17 @@
   box-sizing: border-box;
 }
 
-// TODO SVG for purpose block
-// TODO Slider 1
+// TODO Slider 1 adaptive
 // TODO Slider 2 adaptive
 // TODO Shadow for bicycles cards
+// TODO input of form styles
+
+// @media screen and (max-width: 1439px) {
+//   .page {
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .page {
+//   }
+// }

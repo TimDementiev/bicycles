@@ -13,23 +13,16 @@ const handleArrowClick = (arrow) => {
     currSlide.classList.remove("card_visible_first");
     currSlide.nextElementSibling.classList.remove("card_visible_second");
     let targetSlide;
-
     if (arrow.classList.contains("button_direction_left")) {
       targetSlide = currSlide.previousElementSibling;
-      slider.prepend(slides[slides.length - 1]);
-
-
-
+      slides[slides.length - 1].remove();
+      slider.prepend(slides[2].cloneNode(true));
     }
-
     if (arrow.classList.contains("button_direction_right")) {
       targetSlide = currSlide.nextElementSibling;
       slides[0].remove();
-      const firstSlide = slides[1];
-      const post = firstSlide.cloneNode(true);
-      slider.append(post);
+      slider.append(slides[1].cloneNode(true));
     }
-
     targetSlide.classList.add("card_visible_first");
     targetSlide.nextElementSibling.classList.add("card_visible_second");
   });

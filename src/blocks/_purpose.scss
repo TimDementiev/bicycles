@@ -1,7 +1,18 @@
 .purpose {
-  padding: 60px 0 60px;
-  // overflow: hidden;
-  position: relative;
-  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 120px;
   min-height: 922px;
+  &__slidebar {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .purpose {
+    padding: 0;
+    // margin: 40px 18px;
+    min-height: 505px;
+    border-top: 1px solid $sectionBorderColor;
+  }
 }

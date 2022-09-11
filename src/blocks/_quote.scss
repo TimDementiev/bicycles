@@ -4,3 +4,12 @@
   grid-template-columns: 650px 470px;
   gap: 80px;
 }
+
+@media screen and (max-width: 1439px) {
+  .quote {
+    padding: 40px 18px;
+    grid-template-columns: 284px;
+    gap: 40px;
+    border-top: 1px solid $sectionBorderColor;
+  }
+}

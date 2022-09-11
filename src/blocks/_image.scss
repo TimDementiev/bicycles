@@ -1,0 +1,22 @@
+.image {
+  object-fit: cover;
+  &_place_trainings {
+    grid-area: 1/2 / span 3/2;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .image {
+    max-width: 284px;
+
+    &_place_quote {
+      min-height: 204px;
+      padding: 22px 0 0;
+    }
+
+    &_place_trainings {
+      max-height: 225px;
+      grid-area: 2/1/2/1;
+    }
+  }
+}
