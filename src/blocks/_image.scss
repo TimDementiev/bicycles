@@ -15,8 +15,12 @@
     }
 
     &_place_purpose {
-      // min-height: 204px;
+      min-height: 176px;
       // padding: 22px 0 0;
+    }
+
+    &_place_bicycles {
+      max-width: 284px;
     }
 
     &_place_trainings {

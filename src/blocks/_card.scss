@@ -63,8 +63,6 @@
 
   &_type_bicycles {
     box-sizing: border-box;
-    // padding: 20px;
-    // margin: 20px;
     grid-template-rows: 380px 22px;
     gap: 22px;
     border-radius: 20px;
@@ -72,11 +70,10 @@
     // box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
 
     & img {
+      // filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
       // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
       padding: 20px;
-      // filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
-      // margin: 20px;
     }
   }
 
@@ -150,6 +147,20 @@
       }
       & > .card__img-container > .card__icon {
         visibility: hidden;
+      }
+    }
+
+    &_type_bicycles {
+      box-sizing: border-box;
+      grid-template-rows: 269px 18px;
+      gap: 3px;
+      border-radius: 20px;
+      justify-content: center;
+      justify-items: center;
+
+      & img {
+        border-radius: 20px;
+        padding: 15px;
       }
     }
 
