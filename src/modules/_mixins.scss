@@ -1,0 +1,22 @@
+@mixin card-icon-type-line-1440 {
+  z-index: 2;
+  width: 50px;
+  bottom: 27px;
+  left: 15px;
+}
+
+@mixin card-icon-type-line-320 {
+  z-index: 2;
+  width: 35px;
+  bottom: 18px;
+  left: 11px;
+}
+
+@mixin button-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: max-content;
+  box-sizing: border-box;
+}

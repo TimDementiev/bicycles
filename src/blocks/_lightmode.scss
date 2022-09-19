@@ -5,8 +5,7 @@
   justify-self: flex-end;
   height: 24px;
   width: 44px;
-  // background-size: 44px 24px;
-  background: $checkboxBgColor;
+  background: var(--checkboxBgColor);
   border-radius: 9999px;
   position: relative;
   cursor: pointer;
@@ -19,7 +18,7 @@
     left: -50px;
     width: 28px;
     height: 28px;
-    background-image: url(./../../images/lightmode_sun.svg);
+    background-image: url(../images/lightmode_sun.svg);
     background-size: 28px, 28px, cover;
     background-repeat: no-repeat;
     background-position: top 0px right 0px;
@@ -33,7 +32,7 @@
     right: -41px;
     width: 19px;
     height: 19px;
-    background-image: url(../../images/lightmode_moon.svg);
+    background-image: url(../images/lightmode_moon.svg);
     background-size: 19px, 19px, cover;
     background-repeat: no-repeat;
     background-position: top 0px right 0px;
@@ -52,16 +51,30 @@
     display: inline-block;
     position: absolute;
     border-radius: 50%;
+    background: var(--greenButtonColor);
     top: 2px;
-    background: $greenButtonColor;
     left: 2px;
     z-index: 3;
     transition: all 0.05s ease-in-out;
+  }
+
+  &_place_header {
+    display: none;
+  }
+
+  &_place_footer {
+    display: block;
   }
 }
 
 @media screen and (max-width: 1439px) {
   .lightmode {
+    margin: 0 0 0 7px;
+
+    &_place_header {
+      display: block;
+    }
+
     &_place_footer {
       display: none;
     }

@@ -11,17 +11,36 @@
   &__icon {
     position: absolute;
     transition: visibility 1s ease-in-out;
+
     &_type_label {
-      max-width: max-content;
-      max-width: 200px;
+      width: 100px;
+      height: 40px;
       z-index: 1;
-      bottom: 13px;
-      left: 0;
+      bottom: 16px;
+      left: -2px;
+      background: no-repeat url(../images/purpose_lable.png);
+      background-size: 100px, 40px, cover;
     }
-    &_type_line {
-      z-index: 2;
-      bottom: 24px;
-      left: 16px;
+
+    &_type_curvedline {
+      background: no-repeat url(../images/purpose_curvedline.png);
+      background-size: 50px, 16px, cover;
+      height: 16px;
+      @include card-icon-type-line-1440;
+    }
+
+    &_type_polyline {
+      background: no-repeat url(../images/purpose_polyline.png);
+      background-size: 50px, 5px, cover;
+      height: 7px;
+      @include card-icon-type-line-1440;
+    }
+
+    &_type_straightline {
+      background: no-repeat url(../images/purpose_straightline.png);
+      background-size: 50px, 1px, cover;
+      height: 2px;
+      @include card-icon-type-line-1440;
     }
   }
 
@@ -37,11 +56,7 @@
     object-fit: cover;
     box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
     border-radius: 20px;
-    background: $backgroundMainColor;
-  }
-
-  &_type_fixed {
-    position: absolute;
+    background: var(--bicyclesBgColor);
   }
 
   &_type_purpose {
@@ -66,6 +81,7 @@
     grid-template-rows: 380px 22px;
     gap: 22px;
     border-radius: 20px;
+
     // filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
     // box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
 
@@ -74,6 +90,7 @@
       // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
       padding: 20px;
+      background: var(--bicyclesBgColor);
     }
   }
 
@@ -102,30 +119,35 @@
 @media screen and (max-width: 1439px) {
   .card {
     &__img-container {
-      position: relative;
       grid-area: 2/1/2/1;
     }
 
     &__icon {
       &_type_label {
         width: 70px;
-        z-index: 1;
+        height: 28px;
         bottom: 13px;
-        left: 0;
+        background-size: 70px, 28px, cover;
       }
 
-      &_type_line {
-        z-index: 2;
-        bottom: 24px;
-        left: 16px;
+      &_type_curvedline {
+        background-size: 35px, 12px, cover;
+        @include card-icon-type-line-320;
+      }
+
+      &_type_polyline {
+        background-size: 35px, 5px, cover;
+        @include card-icon-type-line-320;
+      }
+
+      &_type_straightline {
+        background-size: 35px, 2px, cover;
+        @include card-icon-type-line-320;
       }
     }
 
     &_type_intro {
       padding: 11px 27px;
-      box-sizing: border-box;
-      position: absolute;
-      z-index: 1;
       top: 300px;
       right: 50px;
       width: 234px;
@@ -133,21 +155,9 @@
     }
 
     &_type_purpose {
-      border-top: 1px solid $sectionBorderColor;
-      position: absolute;
+      border-top: 1px solid var(--sectionBorderColor);
       grid-template-rows: 80px 175px 90px;
       gap: 40px;
-      transform: translateX(-106.15%);
-      transition: transform 1s ease-in-out;
-      & > .heading {
-        visibility: hidden;
-      }
-      & > .text {
-        visibility: hidden;
-      }
-      & > .card__img-container > .card__icon {
-        visibility: hidden;
-      }
     }
 
     &_type_bicycles {
@@ -159,30 +169,8 @@
       justify-items: center;
 
       & img {
-        border-radius: 20px;
-        padding: 15px;
+        padding: 15px 15px 0 15px;
       }
-    }
-
-    &_visible_first {
-      transform: translateX(0);
-      & > .heading {
-        visibility: visible;
-      }
-      & > .text {
-        visibility: visible;
-      }
-      & > .card__img-container > .card__icon {
-        visibility: visible;
-      }
-    }
-
-    &_visible_second {
-      transform: translateX(106.15%);
-    }
-
-    &_visible_second ~ .card_type_purpose {
-      transform: translateX(212.3%);
     }
   }
 }

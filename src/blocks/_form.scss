@@ -6,16 +6,16 @@
   height: 50px;
 
   &:focus-visible {
-    color: $textMainColor;
-    background: $backgroundFooterColor;
+    color: var(--textMainColor);
+    background: var(--backgroundFooterColor);
     border: none;
   }
 
   &__email-label {
-    color: $textMainColor;
+    color: var(--textMainColor);
     &:focus {
-      color: $textMainColor;
-      background: $backgroundFooterColor;
+      color: var(--textMainColor);
+      background: var(--backgroundFooterColor);
     }
   }
 
@@ -25,12 +25,13 @@
     box-sizing: border-box;
     height: 50px;
     width: 360px;
+    font-family: $font-family;
     font-weight: 500;
     font-size: 13px;
     line-height: 28px;
-    color: $textMainColor;
-    background: $backgroundFooterColor;
-    border: 1px solid $formBorderColor;
+    color: var(--textMainColor);
+    background: var(--backgroundFooterColor);
+    border: 1px solid var(--formBorderColor);
     border-radius: 4px;
   }
 

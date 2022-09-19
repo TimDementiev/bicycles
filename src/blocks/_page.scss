@@ -1,27 +1,47 @@
 .page {
+  --backgroundMainColor: rgba(244, 244, 244, 1); // #F4F4F4;
+  --textMainColor: rgba(21, 21, 21, 1); // #151515;
+  --textAuxColor: rgba(34, 34, 34); //#222222
+  --whiteColor: rgba(255, 255, 255, 1); // #FFFFFF;
+  --transparentTextMainColor: rgba(21, 21, 21, 0.5);
+  --textFooterColor: rgba(207, 207, 207, 1);
+  --backgroundFooterColor: rgba(239, 239, 239, 1);
+  --buttonBgColor: rgba(235, 235, 235, 1);
+  --transparentButtonBgColor: rgba(235, 235, 235, 0.5);
+  --checkboxBgColor: rgba(255, 255, 255, 1);
+  --dotesBgColor: rgba(202, 202, 202, 1);
+  --captionPseudoColor: rgba(215, 212, 212, 1); // #D7D4D4;
+  --greenButtonColor: rgba(36, 180, 126, 1); // #24B47E;
+  --formBorderColor: rgba(199, 199, 199, 0.5);
+  --sectionBorderColor: rgba(227, 227, 227, 1);
+  --bicyclesBgColor: rgba(244, 244, 244, 1);
+
   font-family: $font-family;
   min-width: 768px;
   margin: 0 auto;
-  background: var(--backgroundMainColor, $backgroundMainColor);
+  background: var(--backgroundMainColor);
   position: relative;
+
+  &_dark {
+    --backgroundMainColor: rgba(51, 51, 51, 1);
+    --textMainColor: rgba(255, 255, 255, 1);
+    --textAuxColor: rgba(230, 230, 230);
+    --whiteColor: rgba(255, 255, 255, 1);
+    --transparentTextMainColor: rgba(21, 21, 21, 0.5);
+    --textFooterColor: rgba(207, 207, 207, 1);
+    --backgroundFooterColor: rgba(47, 47, 47, 1);
+    --buttonBgColor: rgba(67, 67, 67, 1);
+    --transparentButtonBgColor: rgba(235, 235, 235, 0.5);
+    --checkboxBgColor: rgba(255, 255, 255, 1);
+    --dotesBgColor: rgba(202, 202, 202, 1);
+    --captionPseudoColor: rgba(215, 212, 212, 1);
+    --greenButtonColor: rgba(36, 180, 126, 1);
+    --formBorderColor: rgba(199, 199, 199, 0.5);
+    --sectionBorderColor: rgba(125, 125, 125, 1);
+  }
 }
 
 * {
   // border: 1px solid red;
   box-sizing: border-box;
 }
-
-// TODO Slider 1 adaptive
-// TODO Slider 2 adaptive
-// TODO Shadow for bicycles cards
-// TODO input of form styles
-
-// @media screen and (max-width: 1439px) {
-//   .page {
-//   }
-// }
-
-// @media screen and (max-width: 767px) {
-//   .page {
-//   }
-// }

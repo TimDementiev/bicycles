@@ -1,13 +1,23 @@
 const body = document.querySelector(".page");
-const switchBtn = document.getElementById("lightmode-checkbox");
+const switchBtnHeader = document.getElementById("lightmode-checkbox-header");
+const switchBtnFooter = document.getElementById("lightmode-checkbox-footer");
 
-const darkBackgroundMainColor = "rgba(51, 51, 51, 1)";
-const lightBackgroundMainColor = "rgba(244, 244, 244, 1)";
-
-switchBtn.addEventListener("change", () => {
-  if (switchBtn.checked) {
-    body.style.setProperty("--backgroundMainColor", darkBackgroundMainColor);
+function toggleTheme() {
+  if (switchBtnHeader.checked) {
+    // switchBtnFooter.checked = true;
+    body.classList.add("page_dark");
   } else {
-    body.style.setProperty("--backgroundMainColor", lightBackgroundMainColor);
+    // switchBtnFooter.checked = false;
+    body.classList.remove("page_dark");
   }
-});
+  if (switchBtnFooter.checked) {
+    // switchBtnHeader.checked = true;
+    body.classList.add("page_dark");
+  } else {
+    // switchBtnHeader.checked = false;
+    body.classList.remove("page_dark");
+  }
+}
+
+switchBtnHeader.addEventListener("change", toggleTheme);
+switchBtnFooter.addEventListener("change", toggleTheme);

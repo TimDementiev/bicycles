@@ -2,9 +2,15 @@
   padding: 60px 0 60px 120px;
   min-height: 922px;
   position: relative;
+
   &__slidebar {
     position: relative;
     overflow: hidden;
+  }
+
+  &__button-container {
+    @include button-container;
+    gap: 20px;
   }
 }
 
@@ -12,5 +18,12 @@
   .purpose {
     padding: 40px 18px 40px;
     min-height: 505px;
+
+    &__button-container {
+      position: absolute;
+      top: 87px;
+      right: 18px;
+      gap: 10px;
+    }
   }
 }

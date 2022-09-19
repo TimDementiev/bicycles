@@ -1,7 +1,7 @@
 .caption {
   margin: 0;
   padding: 0;
-  color: $textMainColor;
+  color: var(--textMainColor);
   max-width: max-content;
 
   &_type_intro {
@@ -17,19 +17,19 @@
       content: "";
       width: 132px;
       height: 2px;
-      background: $captionPseudoColor;
+      background: var(--captionPseudoColor);
       align-self: center;
     }
   }
 
   &_type_author {
-    color: $textMainColor;
+    color: var(--textMainColor);
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
   }
   &_type_job {
-    color: $textAuxColor;
+    color: var(--textAuxColor);
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;

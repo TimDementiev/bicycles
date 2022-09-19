@@ -12,12 +12,37 @@
 <body class="page">
   <!-- HEADER -->
   <header class="section header">
-    <button class="button button_type_menu"></button>
-    <ul class="container container_type_header">
-      <li><a href="#purpose" class="link link_place_header">Покрытия и градиенты</a></li>
-      <li><a href="#bicycles" class="link link_place_header">Велосипеды</a></li>
-      <li><a href="#trainings" class="link link_place_header">Тренировки</a></li>
-    </ul>
+    <div class="header__package header__package_type_desktop">
+      <ul class="container container_type_header">
+        <li class="container__item"><a href="#purpose" class="link link_place_header"
+            id="header-linemenu-purpose-link">Покрытия и
+            градиенты</a></li>
+        <li class="container__item"><a href="#bicycles" class="link link_place_header"
+            id="header-linemenu-bicycles-link">Велосипеды</a>
+        </li>
+        <li class="container__item"><a href="#trainings" class="link link_place_header"
+            id="header-linemenu-trainings-link">Тренировки</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__package header__package_type_mobile">
+      <button class="button button_type_menu"></button>
+      <ul class="container container_type_dropdownmenu">
+        <li class="container__item"><a href="#purpose" class="link link_place_header"
+            id="header-dropdownmenu-purpose-link">Покрытия и
+            градиенты</a></li>
+        <li class="container__item"><a href="#bicycles" class="link link_place_header"
+            id="header-dropdownmenu-bicycles-link">Велосипеды</a>
+        </li>
+        <li class="container__item"><a href="#trainings" class="link link_place_header"
+            id="header-dropdownmenu-trainings-link">Тренировки</a>
+        </li>
+        <li class="container__item container__item_type_lightmode"><label class="lightmode lightmode_place_header">
+            <input class="lightmode__switcher" type="checkbox" id="lightmode-checkbox-header">
+            <span class="lightmode__check"></span>
+          </label></li>
+      </ul>
+    </div>
   </header>
   <!-- MAIN -->
   <main>
@@ -55,18 +80,8 @@
               <img src="images/purpose_david_dvoracek.png"
                 alt="Изображение ровной асфальтовой дороги на фоне гор и хвойного леса"
                 class="image image_place_purpose">
-              <div class="card__icon card__icon_type_label"><svg width="98" height="40" viewBox="0 0 98 40" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 0H93.5279C96.5014 0 98.4354 3.12925 97.1056 5.78885L81.1056 37.7889C80.428 39.144 79.043 40 77.5279 40H0V0Z"
-                    fill="#24B47E" />
-                </svg></div>
-              <div class="card__icon card__icon_type_line"><svg width="51" height="16" viewBox="0 0 51 16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1 15L9.38934 3.61363C11.0392 1.3744 14.4142 1.46086 15.9472 3.78163L22.1718 13.2047C22.9123 14.3256 24.1659 15 25.5094 15H34H51"
-                    stroke="white" stroke-width="2" />
-                </svg></div>
+              <div class="card__icon card__icon_type_label"></div>
+              <div class="card__icon card__icon_type_curvedline"></div>
             </div>
           </li>
           <li class="card card_type_purpose card_visible_second">
@@ -79,18 +94,8 @@
               <img src="images/purpose_sheldon_thompson.png"
                 alt="Изображение ровной асфальтовой дороги на фоне гор и хвойного леса"
                 class="image image_place_purpose">
-              <div class="card__icon card__icon_type_label"><svg width="98" height="40" viewBox="0 0 98 40" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 0H93.5279C96.5014 0 98.4354 3.12925 97.1056 5.78885L81.1056 37.7889C80.428 39.144 79.043 40 77.5279 40H0V0Z"
-                    fill="#24B47E" />
-                </svg></div>
-              <div class="card__icon card__icon_type_line"><svg width="52" height="7" viewBox="0 0 52 7" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1 6L12.443 2.03898C13.4403 1.69373 14.5337 1.75667 15.4849 2.21408L22.1707 5.42916C22.9417 5.79993 23.8112 5.91373 24.6517 5.75385L35.7876 3.63553C36.2587 3.54591 36.7421 3.54174 37.2147 3.62322L51 6"
-                    stroke="white" stroke-width="2" />
-                </svg>
+              <div class="card__icon card__icon_type_label"></div>
+              <div class="card__icon card__icon_type_polyline">
               </div>
             </div>
           </li>
@@ -103,23 +108,15 @@
               <img src="images/purpose_gary_butterfield.png"
                 alt="Изображение ровной асфальтовой дороги на фоне гор и хвойного леса"
                 class="image image_place_purpose">
-              <div class="card__icon card__icon_type_label"><svg width="98" height="40" viewBox="0 0 98 40" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 0H93.5279C96.5014 0 98.4354 3.12925 97.1056 5.78885L81.1056 37.7889C80.428 39.144 79.043 40 77.5279 40H0V0Z"
-                    fill="#24B47E" />
-                </svg></div>
-              <div class="card__icon card__icon_type_line"><svg width="50" height="2" viewBox="0 0 50 2" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 1H12H22.3577H33H50" stroke="white" stroke-width="2" />
-                </svg>
+              <div class="card__icon card__icon_type_label"></div>
+              <div class="card__icon card__icon_type_straightline">
               </div>
+            </div>
           </li>
         </ul>
       </div>
-      <div class="button__container button__container_type_purpose">
-        <button class="button button_type_arrow button_direction_left">
-        </button>
+      <div class="purpose__button-container">
+        <button class="button button_type_arrow button_direction_left"></button>
         <button class="button button_type_arrow button_direction_right"></button>
       </div>
     </section>
@@ -127,21 +124,24 @@
     <section class="section bicycles" id="bicycles">
       <h2 class="heading heading_place_bicycles">Велосипеды</h2>
       <button class="button button_type_dropdown">Шоссе</button>
-      <ul class="button__container button__container_type_bicycles">
-        <li class="">
-          <input class="button__hide-radio" id="radio-bicycles-1" type="radio" name="radio-bicycles" value="1"
-            checked />
+      <ul class="container bicycles__button-container">
+        <li class="container__item container__item_type_dropdown-menu">
+          <input class="button button_type_hide-radio" id="radio-bicycles-1" type="radio" name="radio-bicycles"
+            value="1" checked />
           <label for="radio-bicycles-1" class="button button_type_radio">Шоссе</label>
         </li>
-        <li class="">
-          <input class="button__hide-radio" id="radio-bicycles-2" type="radio" name="radio-bicycles" value="2" />
+        <li class="container__item container__item_type_dropdown-menu">
+          <input class="button button_type_hide-radio" id="radio-bicycles-2" type="radio" name="radio-bicycles"
+            value="2" />
           <label for="radio-bicycles-2" class="button button_type_radio">Грэвел</label>
         </li>
-        <li class="">
-          <input class="button__hide-radio" id="radio-bicycles-3" type="radio" name="radio-bicycles" value="3" />
+        <li class="container__item container__item_type_dropdown-menu">
+          <input class="button button_type_hide-radio" id="radio-bicycles-3" type="radio" name="radio-bicycles"
+            value="3" />
           <label for="radio-bicycles-3" class="button button_type_radio">TT</label>
         </li>
       </ul>
+
       <div class="bicycles__slidebar">
         <ul class="container container_type_bicycles">
           <li class="card card_type_bicycles">
@@ -151,7 +151,7 @@
                 class="image image_place_bicycles"></a>
             <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" class="link"
               target="_blank">
-              <p class="caption caption_type_bicycles">Cervelo Caledonia-5</p>
+              <p class="caption caption_type_bicycles">1Cervelo Caledonia-5</p>
             </a>
           </li>
           <li class="card card_type_bicycles">
@@ -161,7 +161,7 @@
                 alt="Изображение велосипеда Cannondale Systemsix Himod" class="image image_place_bicycles"></a>
             <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
               class="link " target="_blank">
-              <p class="caption caption_type_bicycles">Cannondale Systemsix Himod</p>
+              <p class="caption caption_type_bicycles">2Cannondale Systemsix Himod</p>
             </a>
           </li>
           <li class="card card_type_bicycles">
@@ -171,7 +171,7 @@
                 class="image image_place_bicycles"></a>
             <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
               class="link " target="_blank">
-              <p class="caption caption_type_bicycles">Trek Domane SL-7</p>
+              <p class="caption caption_type_bicycles">3Trek Domane SL-7</p>
             </a>
           </li>
           <li class="card card_type_bicycles">
@@ -181,7 +181,7 @@
                 class="image image_place_bicycles"></a>
             <a href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE"
               class="link " target="_blank">
-              <p class="caption caption_type_bicycles">Cervelo Aspero GRX 810</p>
+              <p class="caption caption_type_bicycles">4Cervelo Aspero GRX 810</p>
             </a>
           </li>
           <li class="card card_type_bicycles">
@@ -191,7 +191,7 @@
                 alt="Изображение велосипеда Specialized S-Works Diverge" class="image image_place_bicycles"></a>
             <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9" class="link "
               target="_blank">
-              <p class="caption caption_type_bicycles">Specialized S-Works Diverge</p>
+              <p class="caption caption_type_bicycles">5Specialized S-Works Diverge</p>
             </a>
           </li>
           <li class="card card_type_bicycles">
@@ -201,55 +201,55 @@
                 alt="Изображение велосипеда Cannondale Topstone Lefty 3" class="image image_place_bicycles"></a>
             <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8"
               class="link " target="_blank">
-              <p class="caption caption_type_bicycles">Cannondale Topstone Lefty 3</p>
+              <p class="caption caption_type_bicycles">6Cannondale Topstone Lefty 3</p>
             </a>
           </li>
           <li class="card card_type_bicycles">
             <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
               class="link " target="_blank">
               <img src="images/bike_specialized_s_works_shiv.png" alt="Изображение велосипеда Specialized S-Works Shiv"
-                class="image image_place_bicycles">
-              <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
-                class="link " target="_blank">
-                <p class="caption caption_type_bicycles">Specialized S-Works Shiv</p>
-              </a>
+                class="image image_place_bicycles"></a>
+            <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
+              class="link " target="_blank">
+              <p class="caption caption_type_bicycles">7Specialized S-Works Shiv</p>
+            </a>
           </li>
           <li class="card card_type_bicycles">
             <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
               class="link " target="_blank">
               <img src="images/bike_bmc_timemachine_01_one.png" alt="Изображение велосипеда BMC Timemachine 01 ONE"
-                class="image image_place_bicycles">
-              <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
-                class="link " target="_blank">
-                <p class="caption caption_type_bicycles">BMC Timemachine 01 ONE</p>
-              </a>
+                class="image image_place_bicycles"></a>
+            <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
+              class="link " target="_blank">
+              <p class="caption caption_type_bicycles">8BMC Timemachine 01 ONE</p>
+            </a>
           </li>
           <li class="card card_type_bicycles">
             <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
               class="link" target="_blank">
               <img src="images/bike_cervelo_p_series.png" alt="Изображение велосипеда Cervelo P-Series"
-                class="image image_place_bicycles">
-              <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
-                class="link " target="_blank">
-                <p class="caption caption_type_bicycles">Cervelo P-Series</p>
-              </a>
+                class="image image_place_bicycles"></a>
+            <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
+              class="link " target="_blank">
+              <p class="caption caption_type_bicycles">9Cervelo P-Series</p>
+            </a>
           </li>
         </ul>
       </div>
-      <ul class="button__container button__container_type_dots">
+      <ul class="bicycles__dote-container">
         <li class="">
-          <input class="button__hide-radio-dots" id="radio-bicycles-dots-1" type="radio" name="radio-bicycles-dots" value="1"
-            checked />
+          <input class="button button_type_hide-radio-dots" id="radio-bicycles-dots-1" type="radio"
+            name="radio-bicycles-dots" value="1" checked />
           <label for="radio-bicycles-dots-1" class="button button_type_dots"></label>
         </li>
         <li class="">
-          <input class="button__hide-radio-dots" id="radio-bicycles-dots-2" type="radio" name="radio-bicycles-dots"
-            value="2" />
+          <input class="button button_type_hide-radio-dots" id="radio-bicycles-dots-2" type="radio"
+            name="radio-bicycles-dots" value="2" />
           <label for="radio-bicycles-dots-2" class="button button_type_dots"></label>
         </li>
         <li class="">
-          <input class="button__hide-radio-dots" id="radio-bicycles-dots-3" type="radio" name="radio-bicycles-dots"
-            value="3" />
+          <input class="button button_type_hide-radio-dots" id="radio-bicycles-dots-3" type="radio"
+            name="radio-bicycles-dots" value="3" />
           <label for="radio-bicycles-dots-3" class="button button_type_dots"></label>
         </li>
       </ul>
@@ -281,7 +281,7 @@
       </form>
       <p class="text text_place_footer">© Road Club 2021</p>
       <label class="lightmode lightmode_place_footer">
-        <input class="lightmode__switcher" type="checkbox" id="lightmode-checkbox">
+        <input class="lightmode__switcher" type="checkbox" id="lightmode-checkbox-footer">
         <span class="lightmode__check"></span>
       </label>
       <button class="button button_type_gear"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -293,6 +293,7 @@
       </button>
     </div>
   </footer>
+  <script src="scripts/show-menu.js"></script>
   <script src="scripts/validate-form.js"></script>
   <script src="scripts/change-lightmode.js"></script>
   <script src="scripts/slide-by-radio.js"></script>

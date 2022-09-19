@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: $textMainColor;
+  color: var(--textMainColor);
   max-width: max-content;
 
   &:hover {
@@ -28,8 +28,8 @@
     line-height: 18px;
     text-align: center;
     letter-spacing: 1px;
-    color: $whiteColor;
-    background: $greenButtonColor;
+    color: var(--whiteColor);
+    background: var(--greenButtonColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,9 +65,7 @@
 @media screen and (max-width: 1439px) {
   .link {
     &_place_header {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 18px;
     }
 
     &_place_intro {
